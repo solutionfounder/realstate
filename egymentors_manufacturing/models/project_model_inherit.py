@@ -78,3 +78,14 @@ class ProjectTask(models.Model):
             'view_type': 'form',
             'view_mode': 'form',
         }
+
+    # Method to get purchasing order
+    def create_new_pill(self):
+
+        return {
+            'type': 'ir.actions.act_url',
+            'url': '/web#menu_id=651&cids=1&action=284&model=account.move&view_type=form',
+            'view_type': 'form',
+            'view_mode': 'form',
+            'target': 'self',
+        }
