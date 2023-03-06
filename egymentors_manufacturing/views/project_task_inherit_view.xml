@@ -51,8 +51,8 @@
                     <field name="project_name_manufacture" attrs="{'invisible':[('is_manufacture','=',False)]}"/>
                     <field name="project_type_manufacture" attrs="{'invisible':[('is_manufacture','=',False)]}"/>
                     <field name="assigned_to" attrs="{'invisible':[('is_manufacture','=',False)]}"/>
-                    <!--                <button name="create_plm" type="object" string="Create PLM"-->
-                    <!--                        attrs="{'invisible':[('is_plm','=',False)]}" class="oe_highlight"/>-->
+                    <button name="create_new_pill" type="object" string="Create Pill"
+                            attrs="{'invisible':[('is_procurement','=',False)]}" class="oe_highlight"/>
                 </xpath>
                 <xpath expr="//field[@name='partner_id']" position="replace">
                     <!-- Add your fields or attributes here -->
