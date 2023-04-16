@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="report_payslip_employee_xlsx" model="ir.actions.report">
+            <field name="name">Payslip Macros - Raw Data(Excel)</field>
+            <field name="model">hr.payslip</field>
+            <field name="report_type">xlsx</field>
+            <field name="report_name">hr_custom_reports.report_payslip_employee</field>
+            <field name="report_file">hr_custom_reports.report_payslip_employee</field>
+            <field name="attachment_use">False</field>
+        </record>
+
+
+        <record id="report_payslip_employee_pdf_action" model="ir.actions.report">
+            <field name="name">Employee Payslip PDF</field>
+            <field name="model">hr.payslip</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">hr_custom_reports.report_payslip_employee_pdf_idd</field>
+            <field name="report_file">hr_custom_reports.report_payslip_employee_pdf_idd</field>
+            <field name="binding_type">report</field>
+        </record>
+
+
+    </data>
+</odoo>
